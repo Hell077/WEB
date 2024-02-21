@@ -226,6 +226,13 @@ nav {
 
 }
 
+.regclick {
+    background-color: #74C0FC;
+    width: 159px;
+    height: 43px;
+    margin-top: 8px;
+}
+
 .maincontainer_content {
     background-color: gray;
     width: 100%;
@@ -342,5 +349,3 @@ nav {
     background-color: #fcfa74;
     width: 15%;
 }
-
-

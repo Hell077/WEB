@@ -1,0 +1,346 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* height: 1000px; */
+}
+
+
+nav {
+    background-color: rgba(58, 63, 69);
+    box-shadow: 0 16px 16px -16px rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+
+.nav_left {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    text-align: center;
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+}
+
+.nav_left img {
+    width: 130px;
+    height: 120px;
+    margin-right: 130px;
+}
+
+.nav_middle {
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    width: 695px;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    border-radius: 30px;
+    gap: 6px;
+}
+
+
+.nav_middle_whitebg_search {
+    background-color: rgb(255, 255, 255);
+    width: 620px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: none;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding-left: 20px;
+    outline: none;
+}
+
+.Search {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 40px;
+
+}
+
+.nav_middle_whitebg_search input::placeholder {
+    color: #000000a9;
+    text-indent: 30px;
+}
+
+.nav_middle_whitebg_search input {
+    padding-left: 40px;
+
+}
+
+
+.nav_right {
+    width: min-content;
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0px 30px;
+    margin: 0px;
+}
+
+.nav_right_buttons:hover {
+    background-color: rgba(136, 144, 145, 0.312);
+    border-radius: 40%;
+}
+
+
+
+.nav_right_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    height: 50%;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.login_interface {
+    width: 330px;
+    display: flex;
+    /* margin: 0 auto; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputlogin {
+    display: flex;
+}
+
+.keypos {
+    margin-top: 13px;
+    margin-right: 10px;
+}
+
+.input1::placeholder {
+    color: black;
+}
+
+.login {
+    display: none;
+}
+
+.register {
+    display: none;
+}
+
+
+.login_flex {
+    display: flex;
+    gap: 30px;
+    max-width: 160px;
+}
+
+.register_flex {
+    display: flex;
+    gap: 30px;
+    max-width: 160px;
+}
+
+.login_image {
+    width: 120px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(209, 207, 207);
+    background-image: url('/images/OIG1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+    margin-left: 5px;
+}
+
+.login_delimiter {
+    height: 250px;
+    width: 5px;
+    background-color: rgb(209, 207, 207);
+}
+
+
+.loginmainbtn {
+    background-color: #74C0FC;
+    width: 159px;
+    height: 43px;
+    margin-top: 8px;
+}
+
+.maincontainer1 {
+    width: 100%;
+    position: fixed;
+
+}
+
+/* .maincontainer_content {
+    margin-top: 110px;
+    z-index: 0;
+    height: 590px;
+    background-color: rgb(136, 207, 219);
+} */
+
+.activelogin {
+    width: 490px;
+    height: 250px;
+    background-color: rgb(133, 136, 139);
+    position: fixed;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xmark {
+    height: max-content;
+    width: max-content;
+    background-color: rgb(133, 136, 139);
+    border: none;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+}
+
+.registerbtn {
+    height: max-content;
+    width: max-content;
+    background-color: rgb(133, 136, 139);
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 3px;
+
+}
+
+.maincontainer_content {
+    background-color: gray;
+    width: 100%;
+    height: 593px;
+    display: flex;
+    margin-top: 110px;
+}
+
+
+.maincontainer_content_left {
+    background-color: #74C0FC;
+    width: 15%;
+}
+
+
+.maincontainer_content_middle {
+    background-color: #74fca1;
+    width: 70%;
+    padding-top: 10px;
+    padding-left: 1%;
+
+}
+
+.maincontainer_content_middle_heightcontent {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    padding-left: 30px;
+    height: min-content;
+    margin-left: 370px;
+    gap: 30px;
+}
+
+.maincontainer_content_middle_heightcontent_object {
+    width: 630px;
+    height: 150px;
+    background-image: url(/images/OIG1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.maincontainer_content_middle_cardleft {
+    width: 300px;
+    height: 350px;
+    background-image: url(/images/OIG1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.maincontainer_content_middle_cardbottom {
+    height: 150px;
+    width: 1030px;
+    background-image: url(/images/OIG1.jpg);
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+}
+
+.register_all {
+    display: none;
+}
+
+.register_all_vision {
+    width: 490px;
+    height: 250px;
+    background-color: rgb(60, 149, 238);
+    position: fixed;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.arrow {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+}
+
+.register_interface {
+    width: 330px;
+    display: flex;
+    /* margin: 0 auto; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.input_register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.input_register i {
+    width: 17px;
+    height: 17px;
+}
+
+.maincontainer_content_middle_cardbottom:hover {
+    background-image: url(/images/_e66cfe93-a126-42b4-9419-3f6ab7377957.jpg);
+}
+
+.maincontainer_content_right {
+    background-color: #fcfa74;
+    width: 15%;
+}
+
+

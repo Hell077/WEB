@@ -322,7 +322,7 @@ nav {
 .register_interface {
     width: 330px;
     display: flex;
-    /* margin: 0 auto; */
+
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -356,8 +356,8 @@ nav {
     align-items: flex-start;
     flex-direction: column;
     position: fixed;
-    top: calc(35% + 50px);
-    left: 210px;
+    top: calc(30% + 50px);
+    left: 150px;
     gap: 10px;
     background-color: #fcfa74;
     border-radius: 10px;
@@ -369,17 +369,12 @@ nav {
     border: none;
 }
 
-/* .maincontainer_content_left_navbutton button:hover {
-   background-color: #ecea65;
-   border-radius: 10px;
-} */
-
 .maincontainer_content_left_navbutton button:active {
     background-color: #ecea65;
     border-radius: 10px;
  }
 
 
- .content{
+ /* .content{
     height: 100vh;
- }
+ } */

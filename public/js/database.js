@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 const User = require('./user_scheme');
 
-mongoose.connect('mongodb://localhost:27017/login', { useNewUrlParser: true, useUnifiedTopology: true });
-
+mongoose.connect('mongodb://localhost:27017/login');
 // Функция, которая добавляет пользователя в базу данных
 async function addUserToDB(username, password) {
   try {
@@ -20,3 +19,4 @@ async function addUserToDB(username, password) {
 }
 
 module.exports = { addUserToDB };
+

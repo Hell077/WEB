@@ -1,10 +1,14 @@
 .topmiddlecontent{
-    width: 60%;
+    width: 65%;
+    padding: 12px;
 }
 
 .slider{
-    height: 600px;
+    height: 580px;
     border: 0.3px solid ;
     border-bottom: none;
+    border: 1px solid red;
+    width: 100%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.082);
 }
    

@@ -1,29 +1,53 @@
 .maincontainer_content_left {
-    background-color: whitesmoke;
-    width: 25%;
+
+    width: 20%;
     border: 0.3px solid;
     border-bottom: none;
+    display: flex;
+    justify-content: center;
 }
-button{
-    background:none;
+
+.content_l_btn {
+    background: none;
     border: none;
+    text-align: center;
+    display: block;
 }
 
-li button{
-    font-size: 25px;
+.content_l_btn:hover {
+    background-color: #f0f0f0;
+    font-size: 1.3em;
+    background: none;
+    border: none;
+    display: block;
+    width: 100%;
+    text-align: left;
 }
 
-hr{
+.content_l_btn{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+hr {
     border: 1px solid rgb(0, 0, 0);
-    border-style:solid;
+    border-style: solid;
 }
 
 
-li button:hover{
+li button:hover {
     text-decoration: underline;
     color: rgb(61, 131, 131);
 }
 
-ul h1{
+ul h1 {
     padding-top: 20px;
+}
+
+.maincontainer_content_left_mini {
+    width: 95%;
+    height: 98%;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px rgba(48, 47, 47, 0.11);
 }

@@ -80,7 +80,6 @@ nav {
 
 .nav_middle_whitebg_search input {
     padding-left: 40px;
-
 }
 
 
@@ -168,11 +167,6 @@ nav {
     margin-left: 5px;
 }
 
-.login_delimiter {
-    height: 250px;
-    width: 5px;
-    background-color: rgb(209, 207, 207);
-}
 
 
 .loginmainbtn {
@@ -185,7 +179,6 @@ nav {
 .maincontainer1 {
     width: 100%;
     position: fixed;
-
 }
 
 /* .maincontainer_content {
@@ -197,8 +190,8 @@ nav {
 
 .activelogin {
     width: 490px;
-    height: 250px;
-    background-color: rgb(133, 136, 139);
+    height: 550px;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 30vh;
     left: 50%;
@@ -207,6 +200,7 @@ nav {
     align-items: center;
     justify-content: center;
     z-index: 100;
+    border: 1px solid black;
 }
 
 .xmark {

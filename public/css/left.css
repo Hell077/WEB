@@ -1,0 +1,29 @@
+.maincontainer_content_left {
+    background-color: whitesmoke;
+    width: 25%;
+    border: 0.3px solid;
+    border-bottom: none;
+}
+button{
+    background:none;
+    border: none;
+}
+
+li button{
+    font-size: 25px;
+}
+
+hr{
+    border: 1px solid rgb(0, 0, 0);
+    border-style:solid;
+}
+
+
+li button:hover{
+    text-decoration: underline;
+    color: rgb(61, 131, 131);
+}
+
+ul h1{
+    padding-top: 20px;
+}

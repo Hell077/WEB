@@ -3,7 +3,6 @@ let activelogin = document.querySelector('.activelogin');
 let profile = document.querySelector('.userbutton');
 let xmark = document.querySelector('.xmark');
 let bugs = document.querySelector('.bugbtn')
-let open = document.querySelector('.maincontainer_content_middle_unlockbtn')
 
 profile.addEventListener('click', function () {
     login.classList.add('activelogin');
@@ -15,7 +14,4 @@ bugs.addEventListener('click', function(){
     alert('Пишите на почту help@gmail.com')
 })
 
-open.addEventListener('click',function(){
-    
-})
 

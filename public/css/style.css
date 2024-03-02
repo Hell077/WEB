@@ -8,7 +8,7 @@ html {
 
 
 nav {
-    background-color: rgba(58, 63, 69);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 16px 16px -16px rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
@@ -16,6 +16,7 @@ nav {
     display: flex;
     justify-content: space-around;
     z-index: 100;
+    border: 0.3px solid;
 }
 
 
@@ -23,7 +24,7 @@ nav {
     align-items: center;
     display: flex;
     justify-content: center;
-    color: aqua;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 30px;
     width: 300px;
@@ -46,7 +47,7 @@ nav {
     border-radius: 30px;
     gap: 6px;
     border: solid;
-    border-color: rgb(172, 172, 172);
+    border-color: rgb(0, 0, 0);
 }
 
 
@@ -237,36 +238,27 @@ nav {
 }
 
 .maincontainer_content {
-    background-color: gray;
+    background-color: whitesmoke;
     width: 100%;
-    height: 860px;
+    height: 600px;
     display: flex;
     margin-top: 110px;
+    border: 0.3px solid;
+    border-top: none;
 }
 
-
-
-.maincontainer_content_left {
-    background-color: #74C0FC;
-    width: 15%;
-}
-
-
-.maincontainer_content_middle {
-    background-color: #74fca1;
-    width: 70%;
-}
 
 .maincontainer_content_right {
-    background-color: #fcfa74;
+    background-color: whitesmoke;
     width: 15%;
+    border: 0.3px solid;
 }
 
 #section2, #section3 {
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    gap: 40px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -275,10 +267,13 @@ nav {
 
 .maincontainer_content_middle_card, .maincontainer_content_middle_card2 {
     width: 250px;
-    height: 230px;
-    background-color: #c5c1c1;
+    height: 243px;
+    background: none;
     text-align: center;
     font-family: "Roboto Mono", monospace;
+    border: 6px solid;
+    border-color: #129def;
+    border-radius: 40px;
 }
 
 .maincontainer_content_middle_card_incard{
@@ -286,21 +281,22 @@ nav {
     width: 210px;
     height: 220px;
     margin: 10px auto;
-    background-color: purple;
     background-size: cover;
     background-position: center;
     background-image: url(../images/OIG1.jpg);
 }
 
+
+
 .maincontainer_content_middle_card_incard2 {
+    border-radius: 40px;
     position: relative;
-    width: 210px;
-    height: 220px;
-    margin: 10px auto;
-    background-color: purple;
+    width: 239px;
+    height: 234px;
+    /* margin: 10px auto; */   
     background-size: cover;
     background-position: center;
-    background-image: url(../images/_e66cfe93-a126-42b4-9419-3f6ab7377957.jpg)
+    background-image: url(../images/_e66cfe93-a126-42b4-9419-3f6ab7377957.jpg);
 }
 
 
@@ -389,52 +385,50 @@ nav {
 
 
 .content_second_left {
-    background-color: rgb(122, 122, 230);
+    background-color: whitesmoke;
     width: 15%;
     height: 100%;
+    border: 0.3px solid;
 }
 
 .content_second_center {
-    background-color: rgb(0, 122, 236);
+    background-color: whitesmoke;
     width: 70%;
     height: 100%;
+    border: 0.3px solid;
 }
 
 .content_second_right {
-    background-color: rgb(0, 124, 133);
+    background-color: whitesmoke;
     width: 15%;
     height: 100%;
+    border: 0.3px solid;
+    padding-top: 0.3px;
 }
 
 .arrows {
-    position: relative;
-    bottom:  400px;
+    height: fit-content;
     display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 1166px;
+    position: absolute;
+    top: 110%;
 }
 
-.arrowleft {
-    position: absolute;
-    top: 20%;
-    left: 10px;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 90px solid transparent;
-    border-bottom: 90px solid transparent;
-    border-right: 90px solid black;
-    cursor: pointer;
+.arrowright, .arrowleft{
+    background: none;
+    border: none;
 }
 
+.fa-3xl{
+    font-size: 80px;
+}
+.section {
+    transition:  1s ease-in-out;
+}
 
-.arrowright{
-    position: absolute;
-    top: 50%;
-    right: 10px; 
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 90px solid transparent;
-    border-bottom: 90px solid transparent;
-    border-left: 90px solid black; 
-    cursor: pointer;
-  }
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}

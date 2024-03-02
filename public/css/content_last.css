@@ -1,0 +1,21 @@
+.content_last{
+    height: 500px;
+    display: flex;
+}
+
+.content_last_left{
+    width: 15%;
+    border: 0.3px solid;
+    height: 500px;
+}
+.content_last_middle{
+    width: 70%;
+    border: 0.3px solid;
+    height: 500px;
+}
+.content_last_right{
+    width: 15%;
+    border: 0.3px solid;
+    height: 500px;
+}
+

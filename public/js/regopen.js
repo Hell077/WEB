@@ -3,6 +3,7 @@ var registerall = document.querySelector('.register_all');
 let regbtn = document.querySelector('.registerbtn');
 const cards = document.querySelectorAll('.maincontainer_content_middle_card_incard');
 
+
 regbtn.addEventListener('click', function() {
     registerall.classList.add('register_all_vision');
     login.classList.remove('activelogin')
@@ -18,4 +19,9 @@ cards.forEach(card => {
        alert('Товар добавлен в корзину')
     });
 });
+
+
+
+
+
 

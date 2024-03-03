@@ -1,0 +1,12 @@
+.newnav{
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    border: 0.3px solid;
+    position: fixed;
+    align-items: center;
+}
+

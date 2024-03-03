@@ -52,11 +52,10 @@
     margin: 0; /* Убираем внутренние отступы у параграфов */
 }
 
-
 .FAQ_btn.open + .FAQ_content {
     display: block;
     position: absolute;
-    width: 1117px;
+    width: 1161px;
     margin-top: 102px;
-    right: 353px;
+    right: 363px;
 }

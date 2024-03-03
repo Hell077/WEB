@@ -1,12 +1,10 @@
 const express = require('express');
-const path = require('path'); // Импортируем модуль path для работы с путями
+const path = require('path');
 const app = express();
 const { addUserToDB } = require('./public/js/database');
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
-
-// Указываем полный путь к папке public для обработки статических файлов
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
@@ -17,17 +15,18 @@ app.get('/about.html', (req, res) => {
     res.render('about');
 });
 
+app.get('/card', (req, res) => {
+    res.render('card');
+});
+
 app.post('/check-user', (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
 
-    // Проверка имени пользователя и пароля на пустоту
     if (!username || !password) {
-        // Если имя пользователя или пароль пусты, показываем сообщение об ошибке
         return res.status(400).send('Имя пользователя и пароль обязательны!');
     }
 
-    // Добавление пользователя в базу данных
     addUserToDB(username, password)
         .then(() => {
             console.log('Пользователь успешно добавлен в базу данных');

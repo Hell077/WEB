@@ -340,6 +340,24 @@ nav {
     transition: opacity 0.3s ease;
 }
 
+
+
+.maincontainer_content_middle_card_incard3::after {
+    content: 'Купить';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgb(255, 104, 104);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .maincontainer_content_middle_card_incard:hover::after {
     opacity: 3;
 }

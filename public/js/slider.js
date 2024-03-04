@@ -2,7 +2,7 @@
 let sections = document.querySelectorAll('#section2, #section3, #section4');
 
 // Устанавливаем индекс текущей секции
-let currentSectionIndex = 0;
+let currentSectionIndex = 2;
 
 // Получаем ссылки на наши кнопки
 let prevButton = document.querySelector('.arrowleft');
@@ -23,7 +23,7 @@ function switchSectionBackward() {
     if (currentSectionIndex < 0) {
         currentSectionIndex = sections.length - 1;
     }
-    
+
     // Показываем предыдущую секцию
     sections[currentSectionIndex].classList.remove('hidden');
 }
@@ -39,7 +39,5 @@ function switchSectionForward() {
     if (currentSectionIndex === sections.length) {
         currentSectionIndex = 0;
     }
-    
-    // Показываем следующую секцию
     sections[currentSectionIndex].classList.remove('hidden');
 }

@@ -1,5 +1,5 @@
 // Получаем все секции
-let sections = document.querySelectorAll('#section2, #section3');
+let sections = document.querySelectorAll('#section2, #section3, #section4');
 
 // Устанавливаем индекс текущей секции
 let currentSectionIndex = 0;
